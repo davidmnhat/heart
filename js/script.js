@@ -158,16 +158,20 @@ function onWindowResize() {
 }
 
 // ===== Hiệu ứng nhiều dòng chữ rơi xuống =====
-// ===== Hiệu ứng nhiều dòng chữ rơi xuống =====
-// ===== Hiệu ứng nhiều dòng chữ rơi xuống =====
 const messages = [
-  "Yêu em nhiều lắm ❤️",
-  "Trái tim này là của em 💕",
-  "Em là điều tuyệt vời nhất 🌸",
-  "Mãi bên nhau nhé 💞",
-  "Cảm ơn vì đã đến bên anh 🌹",
-  "Luôn nhớ em mỗi ngày 🌙",
-  "Trái tim này chỉ đập vì em 💓"
+  "Tùng rinh rinh 🌙🌙🌙",
+  "Tùng tùng tùng rinh rinh 🔥🔥",
+  "Trung thu vui vẻ hahahahaha 🌸",
+  "Nhớ em điiiiii kkk",
+  "Chúc chị Dân iu dấu luôn vui vẻee",
+  "Cũng muốn có quà á chớ kakakaka 🎁",
+  "Tim em đó hehehehe 💖💖💖",
+  "Đừng quên emmmm",
+  "Em nhắn thì rep đi, bơ quàiii 🎈",
+  "Nhớ là phải chờ em hêheh 👦",
+  "Tết em lên :))) 🎉🎉🎉",
+  "Chúc chị Dân ngủ ngoannn mỗi đêm hehe 🎀",
+  "Kiếm nhiều tiền bao nuôi em 🌟🌟🌟"
 ];
 
 const container = document.getElementById("falling-text-container");
