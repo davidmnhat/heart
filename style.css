@@ -58,4 +58,10 @@ h3::before {
   }
 }
 
+@media (max-width: 768px) {
+  .falling-text {
+    font-size: 1.5em !important; /* tăng cỡ chữ toàn bộ trên mobile */
+  }
+}
+
 
