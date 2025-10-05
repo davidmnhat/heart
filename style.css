@@ -38,10 +38,10 @@ h3::before {
 .falling-text {
   position: absolute;
   top: -10%;
-  color: #ffd0d0;
+  color: #ffffff;
   font-family: "Great Vibes", cursive;
   white-space: nowrap;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(-50%) scale(1);
   animation: textFall 8s linear forwards;
   text-shadow: 0 0 10px rgba(255, 200, 200, 0.4);
