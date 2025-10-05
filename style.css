@@ -38,7 +38,7 @@ h3::before {
 .falling-text {
   position: absolute;
   top: -10%;
-  color: #ffeaea;
+  color: #ffd0d0;
   font-family: "Great Vibes", cursive;
   white-space: nowrap;
   opacity: 0;
