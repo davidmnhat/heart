@@ -9,7 +9,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 
-renderer.setClearColor(0xff5555);
+renderer.setClearColor(0xff8787);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 camera.position.z = 1;
@@ -156,5 +156,57 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
+
+// ===== Hiệu ứng nhiều dòng chữ rơi xuống =====
+// ===== Hiệu ứng nhiều dòng chữ rơi xuống =====
+// ===== Hiệu ứng nhiều dòng chữ rơi xuống =====
+const messages = [
+  "Yêu em nhiều lắm ❤️",
+  "Trái tim này là của em 💕",
+  "Em là điều tuyệt vời nhất 🌸",
+  "Mãi bên nhau nhé 💞",
+  "Cảm ơn vì đã đến bên anh 🌹",
+  "Luôn nhớ em mỗi ngày 🌙",
+  "Trái tim này chỉ đập vì em 💓"
+];
+
+const container = document.getElementById("falling-text-container");
+
+function createFallingText() {
+  const text = document.createElement("div");
+  text.className = "falling-text";
+  text.innerText = messages[Math.floor(Math.random() * messages.length)];
+
+  // Vị trí ngang ngẫu nhiên
+  text.style.left = Math.random() * 80 + "%";
+
+  // Chiều sâu (0 = xa, 1 = gần)
+  const depth = Math.random();
+
+  // Giới hạn scale để chữ gần không quá to
+  const scale = 0.6 + depth * 0.7;
+  text.style.setProperty("--scale", scale);
+
+  // Trôi lệch trái/phải nhẹ
+  text.style.setProperty("--drift", (Math.random() - 0.5) * 200 + "px");
+
+  // Kích thước chữ tổng thể
+  text.style.fontSize = 14 + depth * 10 + "pt";
+
+  // Thời gian rơi khác nhau
+  const duration = 8 + (1 - depth) * 6;
+  text.style.animationDuration = `${duration}s`;
+
+  container.appendChild(text);
+
+  // Xóa khi rơi xong
+  setTimeout(() => text.remove(), duration * 1000);
+}
+
+// Rơi dày hơn — tạo nhiều chữ mỗi giây
+setInterval(() => {
+  for (let i = 0; i < 4; i++) createFallingText();
+}, 700);
+
 
 // Footer
