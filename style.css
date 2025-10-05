@@ -39,7 +39,7 @@ h3::before {
   position: absolute;
   top: -10%;
   color: #ffffff;
-  font-family: "Great Vibes", cursive;
+  font-family: "Poppins", sans-serif;
   white-space: nowrap;
   opacity: 1;
   transform: translateX(-50%) scale(1);
