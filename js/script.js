@@ -162,16 +162,12 @@ const messages = [
   "Tùng rinh rinh 🌙🌙🌙",
   "Tùng tùng tùng rinh rinh 🔥🔥",
   "Trung thu vui vẻ hahahahaha 🌸",
-  "Nhớ em điiiiii kkk",
-  "Chúc chị Dân iu dấu luôn vui vẻee",
-  "Cũng muốn có quà á chớ kakakaka 🎁",
-  "Tim em đó hehehehe 💖💖💖",
-  "Đừng quên emmmm",
-  "Em nhắn thì rep đi, bơ quàiii 🎈",
-  "Nhớ là phải chờ em hêheh 👦",
-  "Tết em lên :))) 🎉🎉🎉",
-  "Chúc chị Dân ngủ ngoannn mỗi đêm hehe 🎀",
-  "Kiếm nhiều tiền bao nuôi em 🌟🌟🌟"
+  "M bớt hỏi xàmm",
+  "Suốt ngày đòi block",
+  "Khó chịu qài 🎁",
+  "Đớp ít thoiii",
+  "Nói lời mật ngọt đê",
+  "M bớt bắt nạt taoo 🎈"
 ];
 
 const container = document.getElementById("falling-text-container");
