@@ -195,7 +195,7 @@ function createFallingText() {
   text.style.setProperty("--drift", (Math.random() - 0.5) * 200 + "px");
 
   // Kích thước chữ tổng thể
-  text.style.fontSize = 14 + depth * 10 + "pt";
+  text.style.fontSize = 18 + depth * 12 + "pt";
 
   // Thời gian rơi khác nhau
   const duration = 8 + (1 - depth) * 6;
